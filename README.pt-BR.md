@@ -26,7 +26,15 @@ Os usuários podem realizar cálculos rapidamente através de uma interface intu
 
 <br>
 📸 Interface da Aplicação
-<br> <table align="center" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left"><b>Início</b></td> <td align="left"><b>Cálculo</b></td> <td align="left"><b>Resultado</b></td> </tr> <tr> <td><img src="readme/imagens/home.jpg" width="250"></td> <td><img src="readme/imagens/calculo.jpg" width="250"></td> <td><img src="readme/imagens/resultado.jpg" width="250"></td> </tr> </table> <br>
+<br>
+
+<p align="center"></p>
+
+<p align="left">
+  <img src="readme/img/calculadora.png" width="500">
+</p>
+
+<br>
 ▶ Como Executar o Projeto
 
 - Clone o repositório
