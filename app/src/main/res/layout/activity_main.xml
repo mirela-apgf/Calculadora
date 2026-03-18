@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_historico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text=""
+        android:textColor="#A0A0A0"
+        android:textSize="40sp"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:ellipsize="start"
+        android:layout_marginTop="16dp"/> <TextView
+    android:id="@+id/text_view_resultado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:gravity="end"
+    android:text="0"
+    android:textColor="#FFFFFF"
+    android:textSize="90sp"
+    android:textStyle="bold"
+    android:padding="8dp"
+    android:maxLines="1"
+    android:ellipsize="start"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1AFFFFFF"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingTop="2dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/button_history_list"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="mostrarHistoricoCompleto"
+                    android:background="@drawable/baseline_access_time_24"
+                    android:backgroundTint="#A0A0A0" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout style="@style/CalculatorRow">
+            <Button style="@style/CalculatorButton.Function" android:id="@+id/button_clear" android:text="C" android:onClick="limpar" />
+            <Button style="@style/CalculatorButton.Function" android:id="@+id/button_backspace" android:text="⌫" android:onClick="apagarDigito" />
+            <Button style="@style/CalculatorButton.Function" android:id="@+id/button_percent" android:text="%" android:onClick="calcularUnario" />
+            <Button style="@style/CalculatorButton.PurpleOperator" android:id="@+id/button_divisao" android:text="/" android:onClick="calcular" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalculatorRow">
+            <Button style="@style/CalculatorButton.Number" android:text="7" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="8" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="9" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.PurpleOperator" android:id="@+id/button_multiplicacao" android:text="*" android:onClick="calcular" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalculatorRow">
+            <Button style="@style/CalculatorButton.Number" android:text="4" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="5" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="6" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.PurpleOperator" android:id="@+id/button_subtracao" android:text="-" android:onClick="calcular" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalculatorRow">
+            <Button style="@style/CalculatorButton.Number" android:text="1" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="2" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.Number" android:text="3" android:onClick="inserirNumero" />
+            <Button style="@style/CalculatorButton.PurpleOperator" android:id="@+id/button_soma" android:text="+" android:onClick="calcular" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalculatorRow">
+
+            <Button style="@style/CalculatorButton.Function"
+                android:id="@+id/button_negate"
+                android:text="+/-"
+                android:onClick="calcularUnario"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button style="@style/CalculatorButton.Number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:onClick="inserirNumero" />
+
+            <Button style="@style/CalculatorButton.Number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."
+                android:onClick="inserirNumero" />
+
+            <Button style="@style/CalculatorButton.PurpleOperator"
+                android:id="@+id/button_igual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="
+                android:onClick="calcularResultado" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

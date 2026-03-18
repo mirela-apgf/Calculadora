@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalculatorRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalculatorButton.Number" parent="CalculatorButton">
+        <item name="android:backgroundTint">#333333</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="CalculatorButton.Function" parent="CalculatorButton">
+        <item name="android:backgroundTint">#A0A0A0</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CalculatorButton.PurpleOperator" parent="CalculatorButton">
+        <item name="android:backgroundTint">#800080</item> <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
