@@ -31,7 +31,7 @@ Users can perform calculations quickly through an intuitive interface, making it
 
 <p align="center"></p>
 
-<p align="center">
+<p align="left">
   <img src="readme/img/calculadora.png" width="500">
 </p>
 
