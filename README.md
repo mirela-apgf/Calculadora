@@ -27,7 +27,15 @@ Users can perform calculations quickly through an intuitive interface, making it
 
 <br>
 📸 Application Interface
-<br> <table align="center" border="0" cellspacing="0" cellpadding="0"> <tr> <td align="left"><b>Home</b></td> <td align="left"><b>Calculation</b></td> <td align="left"><b>Result</b></td> </tr> <tr> <td><img src="readme/imagens/home.jpg" width="250"></td> <td><img src="readme/imagens/calculo.jpg" width="250"></td> <td><img src="readme/imagens/resultado.jpg" width="250"></td> </tr> </table> <br>
+<br>
+
+<p align="center"></p>
+
+<p align="center">
+  <img src="readme/img/calculadora.png" width="500">
+</p>
+
+<br>
 ▶ How to Run the Project
 
 - Clone the repository
